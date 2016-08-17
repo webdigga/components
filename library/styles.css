@@ -1,0 +1,8 @@
+.button {
+  min-width: 200px; }
+
+.button__primary {
+  background: red; }
+
+.button__secondary {
+  background: green; }
