@@ -96,6 +96,20 @@ body {
   .button__tertiary:hover {
     background-color: #006700; }
 
+h1,
+h2,
+h3 {
+  margin-bottom: 10px; }
+
+h1 {
+  font-size: 1.8rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.3rem; }
+
 p {
   line-height: 1.5;
   margin-bottom: 0.5rem; }
