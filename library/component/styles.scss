@@ -1,3 +1,4 @@
+// COmponent library specific styles
 body {
 	padding: 1rem;
 	font-family: $font-family-secondary;
@@ -13,4 +14,19 @@ body {
     border-color: #8a8585;
     margin-top: 1rem;
     white-space: pre-wrap;
+}
+.primary {
+    background: $primary; 
+    padding: 1rem;
+    color: white; 
+}
+.secondary {
+    background: $secondary;
+    padding: 1rem;
+    color: white;    
+}
+.tertiary {
+    background: $tertiary;
+    padding: 1rem;
+    color: white;   
 }
