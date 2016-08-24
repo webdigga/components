@@ -50,7 +50,16 @@ body {
   font-family: Helvetica, Arial, sans-serif; }
 
 .component {
-  margin: 1rem; }
+  margin: 1rem 0; }
+
+.component__meta {
+  padding: 1rem;
+  background: #cccccc;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #8a8585;
+  margin-top: 1rem;
+  white-space: pre-wrap; }
 
 .button {
   position: relative;

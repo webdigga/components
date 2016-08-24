@@ -1,0 +1,16 @@
+body {
+	padding: 1rem;
+	font-family: $font-family-secondary;
+}
+.component {
+	margin: 1rem 0;
+}
+.component__meta {
+	padding: 1rem;
+    background: #cccccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8a8585;
+    margin-top: 1rem;
+    white-space: pre-wrap;
+}
