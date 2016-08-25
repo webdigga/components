@@ -1,4 +1,4 @@
-// COmponent library specific styles
+// Component library specific styles
 body {
 	padding: 1rem;
 	font-family: $font-family-secondary;
@@ -8,13 +8,16 @@ body {
 }
 .component__meta {
 	padding: 1rem;
-    background: #cccccc;
+    background: #000000;
     border-width: 1px;
     border-style: solid;
     border-color: #8a8585;
     margin-top: 1rem;
     white-space: pre-wrap;
+    color: #ffffff
 }
+
+// Component specific styles for the colours partial
 .primary {
     background: $primary; 
     padding: 1rem;
@@ -29,4 +32,18 @@ body {
     background: $tertiary;
     padding: 1rem;
     color: white;   
+}
+
+// Component specific styles for the layout partial
+.main__header {
+    background: $primary;
+}
+.main__content {
+    background: $secondary;
+}
+.main__aside {
+    background: $tertiary;
+}
+.main__footer {
+    background: $primary;
 }

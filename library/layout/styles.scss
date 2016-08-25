@@ -1,0 +1,33 @@
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.main__header {
+	padding: 1rem;
+}
+.main__page-content {
+	display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.main__content {
+	padding: 1rem;
+	
+	// 769px
+	@media(min-width: 48.063em) {
+		display: table-cell;
+		width: 70%;
+	}
+}
+.main__aside {
+	padding: 1rem;
+	
+	// 769px
+	@media(min-width: 48.063em) {
+		display: table-cell;
+		width: 30%;
+	}
+}
+.main__footer {
+	padding: 1rem
+}

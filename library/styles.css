@@ -54,12 +54,13 @@ body {
 
 .component__meta {
   padding: 1rem;
-  background: #cccccc;
+  background: #000000;
   border-width: 1px;
   border-style: solid;
   border-color: #8a8585;
   margin-top: 1rem;
-  white-space: pre-wrap; }
+  white-space: pre-wrap;
+  color: #ffffff; }
 
 .primary {
   background: red;
@@ -75,6 +76,47 @@ body {
   background: green;
   padding: 1rem;
   color: white; }
+
+.main__header {
+  background: red; }
+
+.main__content {
+  background: blue; }
+
+.main__aside {
+  background: green; }
+
+.main__footer {
+  background: red; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px; }
+
+.main__header {
+  padding: 1rem; }
+
+.main__page-content {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+.main__content {
+  padding: 1rem; }
+  @media (min-width: 48.063em) {
+    .main__content {
+      display: table-cell;
+      width: 70%; } }
+
+.main__aside {
+  padding: 1rem; }
+  @media (min-width: 48.063em) {
+    .main__aside {
+      display: table-cell;
+      width: 30%; } }
+
+.main__footer {
+  padding: 1rem; }
 
 .button {
   position: relative;
