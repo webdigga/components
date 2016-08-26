@@ -221,6 +221,9 @@ p {
   line-height: 1.5;
   margin-bottom: 0.5rem; }
 
+a {
+  color: #30415d; }
+
 /* General */
 * {
   box-sizing: border-box; }
@@ -417,10 +420,17 @@ p {
 .pagination__link {
   display: block;
   padding: 0.25rem;
-  text-decoration: none;
-  color: #000000; }
+  text-decoration: none; }
 
 .pagination__link--selected {
   background-color: #8eaebd;
   color: #ffffff;
   cursor: default; }
+
+.breadcrumb__item {
+  display: inline-block;
+  font-size: 0.9rem; }
+
+.breadcrumb__item--divider {
+  color: #8eaebd;
+  vertical-align: middle; }
