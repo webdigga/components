@@ -18,32 +18,37 @@ body {
 }
 
 // Component specific styles for the colours partial
-.primary {
-    background: $primary; 
+.colour-one {
+    background: $colourOne; 
     padding: 1rem;
     color: white; 
 }
-.secondary {
-    background: $secondary;
+.colour-two {
+    background: $colourTwo;
     padding: 1rem;
     color: white;    
 }
-.tertiary {
-    background: $tertiary;
+.colour-three {
+    background: $colourThree;
+    padding: 1rem;
+    color: white;   
+}
+.colour-four {
+    background: $colourFour;
     padding: 1rem;
     color: white;   
 }
 
 // Component specific styles for the layout partial
 .main__header {
-    background: $primary;
+    background: $colourOne;
 }
 .main__content {
-    background: $secondary;
+    background: $colourTwo;
 }
 .main__aside {
-    background: $tertiary;
+    background: $colourThree;
 }
 .main__footer {
-    background: $primary;
+    background: $colourFour;
 }
