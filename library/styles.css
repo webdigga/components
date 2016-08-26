@@ -94,6 +94,15 @@ body {
 .main__footer {
   background: #8eaebd; }
 
+.font-large {
+  font-size: 1.1rem; }
+
+.font-small {
+  font-size: 0.9rem; }
+
+.font-smaller {
+  font-size: 0.8rem; }
+
 .container {
   margin: 0 auto;
   max-width: 1000px; }
@@ -130,7 +139,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border-style: none;
   cursor: pointer;
   display: inline-block; }
@@ -160,13 +169,13 @@ body {
     background-color: #27354c; }
 
 .button__tertiary {
-  background-color: #031424;
+  background-color: #8eaebd;
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: black;
-  text-shadow: 0px -2px black; }
+  border-bottom-color: #6e97aa;
+  text-shadow: 0px -2px #6e97aa; }
   .button__tertiary:hover {
-    background-color: #01070c; }
+    background-color: #7ea2b4; }
 
 h1,
 h2,

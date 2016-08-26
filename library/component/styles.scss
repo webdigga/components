@@ -52,3 +52,14 @@ body {
 .main__footer {
     background: $colourFour;
 }
+
+// Component specific styles for the font sizes
+.font-large {
+    font-size: $font-large;
+}
+.font-small {
+    font-size: $font-small;
+}
+.font-smaller {
+    font-size: $font-smaller;
+}

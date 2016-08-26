@@ -43,12 +43,12 @@
 	}
 }
 .button__tertiary {
-	background-color: $colourThree;
+	background-color: $colourFour;
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
-	border-bottom-color: darken($colourThree, 10%);
-	text-shadow: 0px -2px darken($colourThree, 10%);
+	border-bottom-color: darken($colourFour, 10%);
+	text-shadow: 0px -2px darken($colourFour, 10%);
 	&:hover {
-		background-color: darken($colourThree, 5%);
+		background-color: darken($colourFour, 5%);
 	}
 }
