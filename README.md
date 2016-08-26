@@ -13,6 +13,7 @@ Independent components such as Gallery, Colours, Layout, Buttons etc etc
 * Layout
 * Messages
 * Pagination
+* Breadcrumbs
 
 ## Author
 
