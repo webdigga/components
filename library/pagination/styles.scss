@@ -1,0 +1,20 @@
+.pagination {
+	text-align: center;
+}
+.pagination__item {
+	display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $grey;
+}
+.pagination__link {
+	display: block;
+	padding: 0.25rem;
+	text-decoration: none;
+	color: $black;
+}
+.pagination__link--selected {
+	background-color: $colourFour;
+	color: $white;
+	cursor: default;
+}

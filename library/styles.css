@@ -387,7 +387,8 @@ p {
 .message {
   padding: 1rem;
   border-style: solid;
-  border-width: 1px; }
+  border-width: 1px;
+  border-radius: 3px; }
 
 .message__warning {
   background-color: #fcf8e3;
@@ -403,3 +404,23 @@ p {
   background-color: #f2dede;
   color: #963b3b;
   border-color: #e4b9b9; }
+
+.pagination {
+  text-align: center; }
+
+.pagination__item {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc; }
+
+.pagination__link {
+  display: block;
+  padding: 0.25rem;
+  text-decoration: none;
+  color: #000000; }
+
+.pagination__link--selected {
+  background-color: #8eaebd;
+  color: #ffffff;
+  cursor: default; }
