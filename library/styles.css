@@ -54,7 +54,7 @@ body {
 
 .component__meta {
   padding: 1rem;
-  background: #000000;
+  background-color: #000000;
   border-width: 1px;
   border-style: solid;
   border-color: #8a8585;
@@ -63,24 +63,49 @@ body {
   color: #ffffff; }
 
 .colour-one {
-  background: #cf6766;
+  background-color: #cf6766;
   padding: 1rem;
   color: white; }
 
 .colour-two {
-  background: #30415d;
+  background-color: #30415d;
   padding: 1rem;
   color: white; }
 
 .colour-three {
-  background: #031424;
+  background-color: #031424;
   padding: 1rem;
   color: white; }
 
 .colour-four {
-  background: #8eaebd;
+  background-color: #8eaebd;
   padding: 1rem;
   color: white; }
+
+.black {
+  background-color: #000000;
+  padding: 1rem;
+  color: white; }
+
+.white {
+  background-color: #ffffff;
+  padding: 1rem; }
+
+.grey {
+  background-color: #cccccc;
+  padding: 1rem; }
+
+.warning {
+  background-color: #fcf8e3;
+  padding: 1rem; }
+
+.success {
+  background-color: #dff0d8;
+  padding: 1rem; }
+
+.error {
+  background-color: #f2dede;
+  padding: 1rem; }
 
 .main__header {
   background: #cf6766; }
@@ -358,3 +383,23 @@ p {
     .slider__counter {
       right: 1em;
       bottom: 1em; } }
+
+.message {
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1px; }
+
+.message__warning {
+  background-color: #fcf8e3;
+  color: #caad16;
+  border-color: #f7ecb5; }
+
+.message__success {
+  background-color: #dff0d8;
+  color: #529138;
+  border-color: #c1e2b3; }
+
+.message__error {
+  background-color: #f2dede;
+  color: #963b3b;
+  border-color: #e4b9b9; }

@@ -1,0 +1,26 @@
+.message {
+	padding: 1rem;
+	border-style: solid;
+	border-width: 1px;
+}
+
+// Amber
+.message__warning {
+	background-color: $warning;
+	color: darken($warning, 50%);
+	border-color: darken($warning, 10%);
+}
+
+// Green
+.message__success {
+	background-color: $success;
+	color: darken($success, 50%);
+	border-color: darken($success, 10%);
+}
+
+// Red
+.message__error {
+	background-color: $error;
+	color: darken($error, 50%);
+	border-color: darken($error, 10%);
+}

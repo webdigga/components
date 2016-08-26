@@ -8,7 +8,7 @@ body {
 }
 .component__meta {
 	padding: 1rem;
-    background: #000000;
+    background-color: #000000;
     border-width: 1px;
     border-style: solid;
     border-color: #8a8585;
@@ -19,24 +19,49 @@ body {
 
 // Component specific styles for the colours partial
 .colour-one {
-    background: $colourOne; 
+    background-color: $colourOne; 
     padding: 1rem;
     color: white; 
 }
 .colour-two {
-    background: $colourTwo;
+    background-color: $colourTwo;
     padding: 1rem;
     color: white;    
 }
 .colour-three {
-    background: $colourThree;
+    background-color: $colourThree;
     padding: 1rem;
     color: white;   
 }
 .colour-four {
-    background: $colourFour;
+    background-color: $colourFour;
     padding: 1rem;
     color: white;   
+}
+.black {
+    background-color: $black;
+    padding: 1rem;
+    color: white; 
+}
+.white {
+    background-color: $white;
+    padding: 1rem;
+}
+.grey {
+    background-color: $grey;
+    padding: 1rem;
+}
+.warning {
+    background-color: $warning;
+    padding: 1rem;
+}
+.success {
+    background-color: $success;
+    padding: 1rem;
+}
+.error {
+    background-color: $error;
+    padding: 1rem;
 }
 
 // Component specific styles for the layout partial
