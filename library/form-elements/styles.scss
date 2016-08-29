@@ -1,0 +1,16 @@
+select {
+	-webkit-appearance: none;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    height: 40px;
+    background-color: transparent;
+}
+
+input[type="text"],
+input[type="number"] {
+	padding: 0.5rem;
+	height: 40px;
+}
+textarea {
+	height:100px;
+	width: 100%;
+}
