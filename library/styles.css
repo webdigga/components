@@ -459,3 +459,31 @@ input[type="number"] {
 textarea {
   height: 100px;
   width: 100%; }
+
+.list__ordered {
+  list-style-type: decimal;
+  margin-left: 1rem; }
+
+.list__item {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.list__featured-item {
+  margin-bottom: 1rem; }
+
+.list__featured-link {
+  display: block;
+  text-decoration: none;
+  display: flex; }
+
+.list__featured-image-container {
+  width: 20%;
+  max-width: 150px;
+  padding-right: 1rem; }
+
+.list__featured-image {
+  max-width: 100%;
+  height: auto; }
+
+.list__featured-meta {
+  width: 80%; }
