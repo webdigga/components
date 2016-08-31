@@ -487,3 +487,33 @@ textarea {
 
 .list__featured-meta {
   width: 80%; }
+
+.main-nav {
+  background-color: #8eaebd; }
+
+.main-nav__item {
+  border-bottom: 1px solid white; }
+  .main-nav__item:last-child {
+    border-bottom: 0; }
+  @media (min-width: 43.75em) {
+    .main-nav__item {
+      display: inline-block;
+      border-bottom: 0;
+      height: 50px;
+      line-height: 2rem;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: white; }
+      .main-nav__item:last-child {
+        border-right: 0; } }
+
+.main-nav__link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem; }
+  .main-nav__link:hover {
+    background-color: #6e97aa; }
+
+.main-nav__link--selected {
+  background-color: #6e97aa; }
