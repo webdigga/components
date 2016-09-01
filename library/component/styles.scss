@@ -37,7 +37,6 @@ body {
     padding: 1rem;
 }
 .component__menu-link {
-    color: $colourOne;
     padding: 1rem 0 0.5rem 0;
     display: block;
 }
@@ -60,6 +59,11 @@ body {
 }
 .colour-four {
     background-color: $colourFour;
+    padding: 1rem;
+    color: white;   
+}
+.colour-five {
+    background-color: $colourFive;
     padding: 1rem;
     color: white;   
 }
