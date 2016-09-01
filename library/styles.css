@@ -512,8 +512,44 @@ textarea {
 .list__featured-meta {
   width: 80%; }
 
+.navicon {
+  position: relative;
+  padding-left: 1.25em; }
+  @media (min-width: 43.75em) {
+    .navicon {
+      display: none; } }
+
+.navicon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black; }
+
 .main-nav {
-  background-color: #8eaebd; }
+  background-color: #8eaebd;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.5s ease-in-out;
+  margin-top: 0.75rem; }
+  @media (min-width: 43.75em) {
+    .main-nav {
+      max-height: 50px;
+      transition: none;
+      margin-top: 0;
+      height: 50px; } }
+
+.main-nav--open {
+  overflow-y: hidden;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 200px; }
+  @media (min-width: 43.75em) {
+    .main-nav--open {
+      max-height: auto;
+      transition: none; } }
 
 .main-nav__item {
   border-bottom: 1px solid white; }
