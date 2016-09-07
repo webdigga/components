@@ -22,7 +22,7 @@ $navBreak: '43.750em';
 
 // Main nav
 .main-nav {
-	background-color: $colourTwo;
+	background-color: $highlight;
     max-height: 0;            
     overflow-y: hidden;
     transition: max-height 0.5s ease-in-out;
@@ -67,14 +67,14 @@ $navBreak: '43.750em';
     }
 }
 .main-nav__link {
-    color: $white;
+    color: $black;
     text-decoration: none;
     display: block;
     padding: 0.5rem 1rem;
     &:hover {
-    	background-color: darken($colourTwo, 10%);
+    	background-color: darken($subtle, 10%);
     }
 }
 .main-nav__link--selected {
-	background-color: darken($colourTwo, 10%);
+	background-color: darken($subtle, 10%);
 }

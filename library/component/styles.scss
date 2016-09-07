@@ -38,27 +38,27 @@
 
 // Component specific styles for the colours partial
 .colour-one {
-    background-color: $colourOne; 
+    background-color: $primary; 
     padding: 1rem;
     color: white; 
 }
 .colour-two {
-    background-color: $colourTwo;
+    background-color: $secondary;
     padding: 1rem;
     color: white;    
 }
 .colour-three {
-    background-color: $colourThree;
+    background-color: $strapline;
     padding: 1rem;
     color: white;   
 }
 .colour-four {
-    background-color: $colourFour;
+    background-color: $highlight;
     padding: 1rem;
     color: white;   
 }
 .colour-five {
-    background-color: $colourFive;
+    background-color: $subtle;
     padding: 1rem;
     color: white;   
 }
@@ -90,16 +90,16 @@
 
 // Component specific styles for the layout partial
 .main__header {
-    background: $colourOne;
+    background: $primary;
 }
 .main__content {
-    background: $colourTwo;
+    background: $secondary;
 }
 .main__aside {
-    background: $colourThree;
+    background: $strapline;
 }
 .main__footer {
-    background: $colourFour;
+    background: $highlight;
 }
 
 // Component specific styles for the font sizes

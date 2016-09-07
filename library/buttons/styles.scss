@@ -23,32 +23,22 @@
 	display: inline-block;
 }
 .button__primary {
-	background-color: $colourOne;
+	background-color: $primary;
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
-	border-bottom-color: darken($colourOne, 10%);
-	text-shadow: 0px -2px darken($colourOne, 10%);
+	border-bottom-color: darken($primary, 10%);
+	text-shadow: 0px -2px darken($primary, 10%);
 	&:hover {
-		background-color: darken($colourOne, 5%);
+		background-color: darken($primary, 5%);
 	}
 }
 .button__secondary {
-	background-color: $colourTwo;
+	background-color: $secondary;
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
-	border-bottom-color: darken($colourTwo, 10%);
-	text-shadow: 0px -2px darken($colourTwo, 10%);
+	border-bottom-color: darken($secondary, 10%);
+	text-shadow: 0px -2px darken($secondary, 10%);
 	&:hover {
-		background-color: darken($colourTwo, 5%);
-	}
-}
-.button__tertiary {
-	background-color: $colourFour;
-	border-bottom-width: 5px;
-	border-bottom-style: solid;
-	border-bottom-color: darken($colourFour, 10%);
-	text-shadow: 0px -2px darken($colourFour, 10%);
-	&:hover {
-		background-color: darken($colourFour, 5%);
+		background-color: darken($secondary, 5%);
 	}
 }
