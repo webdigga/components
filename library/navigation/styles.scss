@@ -5,6 +5,8 @@ $navBreak: '43.750em';
 .navicon {
     position: relative;
     padding-left: 1.25em;
+    margin: 0.75rem 0.75rem 0 0.75rem;
+    display: inline-block;
     @media(min-width: $navBreak) {
         display: none;
     }

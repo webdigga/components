@@ -1,6 +1,17 @@
-// This function adds a class to the main nav when the menu is clicked,
-// so we can animate in CSS
-function naviconClick() {
-	var menu = document.querySelector('.main-nav') // Using a class instead, see note below.
-	menu.classList.toggle('main-nav--open');
-}
+dcbObj = {
+
+	// Adding event listener for when the navicon is clicked
+	navicon: function() {
+		var navicon = document.querySelector( '.js-navicon' ),
+			menu = document.querySelector( '.main-nav' );
+
+		navicon.addEventListener('click', function() {
+			menu.classList.toggle( 'main-nav--open' );
+		}, false);
+	},
+	init: function() {
+		this.navicon();
+	}
+};
+
+dcbObj.init();
