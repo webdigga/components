@@ -18,6 +18,7 @@ Independent components such as Gallery, Colours, Layout, Buttons etc etc
 * <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/navigation/index.html">Navigation</a>
 * <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/pagination/index.html">Pagination</a>
 * <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/typography/index.html">Typography</a>
+* <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/footer/index.html">Footer</a>
 
 ## Author
 

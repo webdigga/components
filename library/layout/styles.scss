@@ -1,7 +1,15 @@
+// 769px
+$layoutBreak: '48.063em';
+
+* {
+	box-sizing: border-box;
+}
 body {
-	padding: 0;
 	margin: 0;
-	font-family: $font-family-secondary;
+	padding: 0;
+    background-color: $grey;
+    font-family: $font-family-primary;
+    color: $black;
 }
 .container {
 	margin: 0 auto;
@@ -16,18 +24,14 @@ body {
 }
 .main__content {
 	padding: 1rem;
-	
-	// 769px
-	@media(min-width: 48.063em) {
+	@media(min-width: $layoutBreak) {
 		display: table-cell;
 		width: 70%;
 	}
 }
 .main__aside {
 	padding: 1rem;
-	
-	// 769px
-	@media(min-width: 48.063em) {
+	@media(min-width: $layoutBreak) {
 		display: table-cell;
 		width: 30%;
 	}
