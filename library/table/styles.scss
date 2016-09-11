@@ -1,0 +1,24 @@
+table {
+	border-spacing: 0;
+	width: 100%;
+}
+th,
+td {
+	padding: 0.5rem;
+}
+th {
+	text-align: left;
+	background-color: $secondary;
+	color: $white;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: $black;
+}
+tr {
+	&:nth-child(even) {
+		background-color: lighten($secondary, 40%);
+	}
+	&:hover {
+		background-color: lighten($secondary, 35%);
+	}
+}

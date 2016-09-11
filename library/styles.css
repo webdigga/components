@@ -594,3 +594,25 @@ textarea {
   padding: 0.5rem;
   font-style: italic;
   text-align: center; }
+
+table {
+  border-spacing: 0;
+  width: 100%; }
+
+th,
+td {
+  padding: 0.5rem; }
+
+th {
+  text-align: left;
+  background-color: #6791ac;
+  color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #555555; }
+
+tr:nth-child(even) {
+  background-color: #ebf0f4; }
+
+tr:hover {
+  background-color: #dae5eb; }
