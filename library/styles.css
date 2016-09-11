@@ -4,36 +4,45 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #cccccc;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   color: #555555; }
 
 .container {
   margin: 0 auto; }
 
+.main__header {
+  background-color: #eaeaea; }
+
 .main__page-content {
   display: table;
   table-layout: fixed;
-  width: 100%; }
+  width: 100%;
+  background-color: #ffffff; }
 
 .main__content {
   padding: 1rem; }
   @media (min-width: 48.063em) {
     .main__content {
+      vertical-align: top;
       display: table-cell;
       width: 70%; } }
 
 .main__aside {
-  padding: 1rem; }
+  padding: 0 1rem 1rem 1rem; }
   @media (min-width: 48.063em) {
     .main__aside {
+      padding: 1rem;
       display: table-cell;
       width: 30%; } }
 
 .main__footer {
-  padding: 1rem; }
+  padding: 1rem;
+  background-color: #eaeaea; }
 
 body {
-  padding: 1rem; }
+  padding: 1rem;
+  background-color: white; }
 
 .component {
   margin: 1rem 0; }
