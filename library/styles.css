@@ -587,3 +587,10 @@ textarea {
 
 .footer__list-item {
   margin-bottom: 5px; }
+
+.strapline {
+  background-color: #b94a48;
+  color: #ffffff;
+  padding: 0.5rem;
+  font-style: italic;
+  text-align: center; }
