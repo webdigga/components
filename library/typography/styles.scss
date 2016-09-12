@@ -33,3 +33,13 @@ a {
 		text-decoration: underline;
 	}
 }
+
+// Blockquote
+blockquote {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: $secondary;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    font-style: italic;
+}
