@@ -9,7 +9,7 @@ dcbObj = {
 		rangeValue.innerHTML = range.value;
 
 		// Add the listener for change event
-		range.addEventListener('change', function() {
+		range.addEventListener('input', function() {
 			rangeValue.innerHTML = this.value;
 		});
 	},

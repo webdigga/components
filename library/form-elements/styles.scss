@@ -29,91 +29,102 @@ textarea {
 // Range slider styles
 // http://www.cssportal.com/style-input-range/
 // TODO - amend code below to be Sass and comply with standards
-input[type=range] {
+.range {
+	display: table;
+	width: 100%;
+}
+.range__input {
+	display: table-cell;
+	vertical-align: middle;
 	-webkit-appearance: none;
 	margin: 10px 0;
 	width: 100%;
+	&:focus {
+		outline: none;
+	}
+	&::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 10px;
+		cursor: pointer;
+		animate: 0.2s;
+		box-shadow: 1px 1px 1px $black;
+		background: $secondary;
+		border-radius: 5px;
+		border: 1px solid $black;
+	}
+	&::-webkit-slider-thumb {
+		box-shadow: 1px 1px 1px $black;
+		border: 1px solid $black;
+		height: 30px;
+		width: 15px;
+		border-radius: 5px;
+		background: $white;
+		cursor: pointer;
+		-webkit-appearance: none;
+		margin-top: -11px;
+	}
+	&:focus::-webkit-slider-runnable-track {
+		background: $secondary;
+	}
+	&::-moz-range-track {
+		width: 100%;
+		height: 10px;
+		cursor: pointer;
+		animate: 0.2s;
+		box-shadow: 1px 1px 1px $black;
+		background: $secondary;
+		border-radius: 5px;
+		border: 1px solid $black;
+	}
+	&::-moz-range-thumb {
+		box-shadow: 1px 1px 1px $black;
+		border: 1px solid $black;
+		height: 30px;
+		width: 15px;
+		border-radius: 5px;
+		background: $white;
+		cursor: pointer;
+	}
+	&::-ms-track {
+		width: 100%;
+		height: 10px;
+		cursor: pointer;
+		animate: 0.2s;
+		background: transparent;
+		border-color: transparent;
+		color: transparent;
+	}
+	&::-ms-fill-lower {
+		background: $secondary;
+		border: 1px solid $black;
+		border-radius: 10px;
+		box-shadow: 1px 1px 1px $black;
+	}
+	&::-ms-fill-upper {
+		background: $secondary;
+		border: 1px solid $black;
+		border-radius: 10px;
+		box-shadow: 1px 1px 1px $black;
+	}
+	&::-ms-thumb {
+		box-shadow: 1px 1px 1px $black;
+		border: 1px solid $black;
+		height: 30px;
+		width: 15px;
+		border-radius: 5px;
+		background: $white;
+		cursor: pointer;
+	}
+	&:focus::-ms-fill-lower {
+		background: $secondary;
+	}
+	&:focus::-ms-fill-upper {
+		background: $secondary;
+	}
 }
-input[type=range]:focus {
-	outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-	width: 100%;
-	height: 10px;
-	cursor: pointer;
-	animate: 0.2s;
-	box-shadow: 1px 1px 1px #000000;
-	background: #3071A9;
-	border-radius: 5px;
-	border: 1px solid #000000;
-}
-input[type=range]::-webkit-slider-thumb {
-	box-shadow: 1px 1px 1px #000000;
-	border: 1px solid #000000;
-	height: 30px;
-	width: 15px;
-	border-radius: 5px;
-	background: #FFFFFF;
-	cursor: pointer;
-	-webkit-appearance: none;
-	margin-top: -11px;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-	background: #3071A9;
-}
-input[type=range]::-moz-range-track {
-	width: 100%;
-	height: 10px;
-	cursor: pointer;
-	animate: 0.2s;
-	box-shadow: 1px 1px 1px #000000;
-	background: #3071A9;
-	border-radius: 5px;
-	border: 1px solid #000000;
-}
-input[type=range]::-moz-range-thumb {
-	box-shadow: 1px 1px 1px #000000;
-	border: 1px solid #000000;
-	height: 30px;
-	width: 15px;
-	border-radius: 5px;
-	background: #FFFFFF;
-	cursor: pointer;
-}
-input[type=range]::-ms-track {
-	width: 100%;
-	height: 10px;
-	cursor: pointer;
-	animate: 0.2s;
-	background: transparent;
-	border-color: transparent;
-	color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-	background: #3071A9;
-	border: 1px solid #000000;
-	border-radius: 10px;
-	box-shadow: 1px 1px 1px #000000;
-}
-
-input[type=range]::-ms-fill-upper {
-background: #3071A9;
-border: 1px solid #000000;
-border-radius: 10px;
-box-shadow: 1px 1px 1px #000000;
-}
-input[type=range]::-ms-thumb {
-box-shadow: 1px 1px 1px #000000;
-border: 1px solid #000000;
-height: 30px;
-width: 15px;
-border-radius: 5px;
-background: #FFFFFF;
-cursor: pointer;
-}
-input[type=range]:focus::-ms-fill-lower {
-background: #3071A9;
-}
-input[type=range]:focus::-ms-fill-upper {
-background: #3071A9;
+.range__value {
+	display: table-cell;
+	width: 100px;
+	vertical-align: middle;
+	text-align: center;
 }
