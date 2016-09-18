@@ -4,6 +4,9 @@ input[type="number"],
 textarea {
 	font-size: 16px;
 	font-family: $font-family-secondary;
+	&:focus {
+		outline: 5px auto $secondary;
+	}
 }
 
 select {
@@ -21,6 +24,7 @@ input[type="number"] {
 	padding: 0.5rem;
 	height: 40px;
 }
+
 textarea {
 	height:100px;
 	width: 100%;
@@ -28,11 +32,11 @@ textarea {
 
 // Range slider styles
 // http://www.cssportal.com/style-input-range/
-// TODO - amend code below to be Sass and comply with standards
 .range {
 	display: table;
 	width: 100%;
 }
+
 .range__input {
 	display: table-cell;
 	vertical-align: middle;
@@ -122,6 +126,7 @@ textarea {
 		background: $secondary;
 	}
 }
+
 .range__value {
 	display: table-cell;
 	width: 100px;

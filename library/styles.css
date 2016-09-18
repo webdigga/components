@@ -443,6 +443,11 @@ input[type="number"],
 textarea {
   font-size: 16px;
   font-family: "Arial", "Helvetica", "HelveticaNeue", sans-serif; }
+  select:focus,
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    outline: 5px auto #6791ac; }
 
 select {
   -webkit-appearance: none;
