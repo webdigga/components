@@ -1,6 +1,6 @@
 ## Synopsis
 
-A component library ready for the redesign of diggascookbook.com
+A component library
 
 ## Example
 

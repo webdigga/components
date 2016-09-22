@@ -2,11 +2,26 @@
 	margin: 0;
 	padding: 0;
 }
-.breadcrumb__item {
+
+.breadcrumbs__item {
 	display: inline-block;
 	font-size: $font-small;
 }
-.breadcrumb__item--divider {
+
+.breadcrumbs__item--divider {
 	color: $primary;
     vertical-align: middle;
+}
+
+.breadcrumbs__link {
+	text-decoration: underline;
+}
+
+.breadcrumbs__link--selected {
+	cursor: default;
+	color: $black;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
 }

@@ -74,6 +74,7 @@ $navBreak: '43.750em';
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
+    line-height: 35px;
     &:hover {
     	background-color: darken($subtle, 10%);
     }
