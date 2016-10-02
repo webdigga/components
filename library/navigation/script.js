@@ -2,7 +2,7 @@ dcbObj = {
 
 	// Adding event listener for when the navicon is clicked
 	navicon: function() {
-		var navicon = document.querySelector( '.js-navicon' ),
+		var navicon = document.querySelector( '.js-main-nav__navicon' ),
 			menu = document.querySelector( '.main-nav' );
 
 		navicon.addEventListener('click', function() {

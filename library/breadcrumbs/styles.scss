@@ -1,3 +1,11 @@
+/*
+	Breadcrumbs component
+
+	- Used so users are always aware of where they are on the site
+	- Found in header on all pages below homepage
+*/
+
+// Styles
 .breadcrumbs {
 	margin: 0;
 	padding: 0;
@@ -9,7 +17,7 @@
 }
 
 .breadcrumbs__item--divider {
-	color: $primary;
+	color: $colourOne;
     vertical-align: middle;
 }
 

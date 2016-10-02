@@ -1,45 +1,70 @@
-// 769px
-$layoutBreak: '48.063em';
+/*
+	Layout component
 
-* {
-	box-sizing: border-box;
-}
+	- Core layout and container styles
+	- Found site wide
+*/
+
+// Vars
+$layout: (
+	'break1': 48.000em, // 768px
+	'padding20': 20px,
+	'padding30': 30px,
+	'padding40': 40px
+);
+
+// Styles
 body {
 	margin: 0;
 	padding: 0;
-    background-color: $grey;
-    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
     color: $black;
 }
+
 .container {
+	max-width: 1000px;
 	margin: 0 auto;
 }
-.main__header {
-	background-color: $highlight;
+
+.main__header--home {
+	@media (min-width: map-get($layout, 'break1')) {
+		margin-bottom: map-get($layout, 'padding30');
+	}
 }
+
 .main__page-content {
 	display: table;
     table-layout: fixed;
     width: 100%;
     background-color: $white;
+    box-sizing: border-box;
 }
+
 .main__content {
-	padding: 1rem;
-	@media(min-width: $layoutBreak) {
+	margin: map-get($layout, 'padding20') map-get($layout, 'padding20') 0 map-get($layout, 'padding20');
+	@media (min-width: map-get($layout, 'break1')) {
+		padding: map-get($layout, 'padding40');
+		width: 80%;
+	}
+}
+
+.main__content--with-aside {
+	@media(min-width: map-get($layout, 'break1')) {
 		vertical-align: top;
 		display: table-cell;
 		width: 70%;
 	}
 }
+
 .main__aside {
-	padding: 0 1rem 1rem 1rem;
-	@media(min-width: $layoutBreak) {
-		padding: 1rem;
+	margin: map-get($layout, 'padding20');
+	@media(min-width: map-get($layout, 'break1')) {
+		padding: map-get($layout, 'padding40') map-get($layout, 'padding40') map-get($layout, 'padding40') 0;
 		display: table-cell;
 		width: 30%;
 	}
 }
+
 .main__footer {
-	padding: 1rem;
 	background-color: $highlight;
 }

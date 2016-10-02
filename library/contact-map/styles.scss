@@ -1,0 +1,18 @@
+/*
+	Map component
+
+	- Used for highlighting contact location
+	- Found on contact page
+*/
+
+// Styles
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	height: 300px;
+}

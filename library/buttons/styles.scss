@@ -1,10 +1,29 @@
+/*
+	Buttons component
+
+	- Used for primary and secondary CTA's
+	- Found site wide
+*/
+
+// Vars
+$button: (
+	'break1': 48.000em, // 768px
+	'padding5': 5px,
+	'padding10': 10px,
+	'padding20': 20px
+);
+
+// Styles
 .button {
-	position: relative;
-	padding: 0.5rem 0.75rem;
+	text-align: center;
+	padding: map-get($button, 'padding10') map-get($button, 'padding20');
 	color: $white;
 	text-decoration: none;
 	font-family: $font-family-secondary;
 	font-size: $font-small;
+	min-width: 200px;
+	border-radius: 3px;
+	box-sizing: border-box;
 	&:active {
 		border-bottom-width: 5px;
 		border-bottom-style: solid;
@@ -14,30 +33,30 @@
 		outline: none;
 	}
 
-	// This resets default button styles
+	// These reset default styles
 	border-style: none;
 	cursor: pointer;
-
-	// This resets default href styles
 	display: inline-block;
 }
+
 .button__primary {
-	background-color: $primary;
+	background-color: $colourFour;
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
-	border-bottom-color: darken($primary, 10%);
-	text-shadow: 0px -2px darken($primary, 10%);
+	border-bottom-color: darken($colourFour, 10%);
+	text-shadow: 0px -2px darken($colourFour, 10%);
 	&:hover {
-		background-color: darken($primary, 5%);
+		background-color: darken($colourFour, 5%);
 	}
 }
+
 .button__secondary {
-	background-color: $secondary;
+	background-color: $colourTwo;
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
-	border-bottom-color: darken($secondary, 10%);
-	text-shadow: 0px -2px darken($secondary, 10%);
+	border-bottom-color: darken($colourTwo, 10%);
+	text-shadow: 0px -2px darken($colourTwo, 10%);
 	&:hover {
-		background-color: darken($secondary, 5%);
+		background-color: darken($colourTwo, 5%);
 	}
 }

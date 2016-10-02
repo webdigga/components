@@ -1,11 +1,50 @@
+/*
+	Feature component
+
+	- Used for feature information/testamonials
+	- Mostly found in the aside
+*/
+
+// Vars
+$feature: (
+	'break1': 35.500em, // 568px
+	'break2': 48.000em, // 768px
+	'padding20': 20px,
+	'padding40': 40px
+);
+
+// Styles
+.feature__container {
+	@media(min-width: map-get($feature, 'break1')) {
+		display: flex;
+		justify-content: space-between;
+	}
+	@media(min-width: map-get($feature, 'break2')) {
+		display: block;
+	}
+	* {
+		box-sizing: border-box;
+	}
+}
+
 .feature {
-	background-color: $highlight;
-	padding: 1rem;
+	background-color: $colourThree;
+	padding: map-get($feature, 'padding20');
 	color: $black;
 	border-style: solid;
 	border-width: 1px;
 	border-color: darken($highlight, 10%);
-}
-.feature__cta {
-	text-align: right;
+	margin-bottom: map-get($feature, 'padding20');
+	border-radius: 3px;
+	@media(min-width: map-get($feature, 'break1')) {
+		margin-bottom: 0;
+		width: calc(33% - 12px);
+	}
+	@media(min-width: map-get($feature, 'break2')) {
+		margin-bottom: map-get($feature, 'padding40');
+		width: 100%;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }

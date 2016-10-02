@@ -1,42 +1,73 @@
-// 500px
-$footerBreak: '31.250em';
+/*
+	Footer component
 
+	- Used to display navigation items to draw users back into the site
+	- Found site wide
+*/
+
+// Vars
+$footer: (
+	'break1': 31.250em, // 500px
+	'padding5': 5px,
+	'padding20': 20px
+);
+
+// Styles
 .footer,
 .footer__list {
-	padding: 0;
 	margin: 0;
 	list-style-type: none;
 	width: 100%;
 }
-.footer__col {
-	display: inline-block;
-	width: 33%;
-	vertical-align: top;
+
+.footer__list {
+	padding: 0;
 }
-.footer__col--1 {
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: $primary;
-	padding-right: 0.5rem;
-	@media(min-width: $footerBreak) {
-		padding-right: 1rem;
+
+.footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: map-get($footer, 'padding20');
+	text-align: center;
+	box-sizing: border-box;
+	@media(min-width: map-get($footer, 'break1')) {
+		text-align: left;
+		display: flex;
+		justify-content: space-around;
+	}
+	* {
+		box-sizing: border-box;
 	}
 }
+
 .footer__col--2 {
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: $primary;
-	padding-left: 0.5rem;
-	@media(min-width: $footerBreak) {
-		padding-left: 1rem;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: lighten($black, 40%);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: lighten($black, 40%);
+	padding: map-get($footer, 'padding20') 0;
+	margin: map-get($footer, 'padding20') 0;
+	@media(min-width: map-get($footer, 'break1')) {
+		margin: 0;
+		padding: 0;
+		border-top: 0;
+		border-bottom: 0;
+		padding: 0 15%;
+		border-right-width: 1px;
+		border-right-style: solid;
+		border-right-color: lighten($black, 40%);
+		border-left-width: 1px;
+		border-left-style: solid;
+		border-left-color: lighten($black, 40%);
 	}
 }
-.footer__col--3 {
-	padding-left: 0.5rem;
-	@media(min-width: $footerBreak) {
-		padding-left: 1rem;
-	}
-}
+
 .footer__list-item {
-	margin-bottom: 5px;
+	margin-bottom: map-get($footer, 'padding5');
+}
+
+.footer__link {
+	color: $black;
 }

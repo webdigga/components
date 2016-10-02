@@ -1,88 +1,139 @@
-// 700px
-$navBreak: '43.750em';
+/*
+    Navigation component
 
-// Navicon
-.navicon {
+    - Used for mobile navigation and when there si room, traditional navigation
+    - Found site wide
+*/
+
+// Vars
+$main-nav: (
+    'break1': 36.875em, // 590px
+    'padding5': 5px,
+    'padding10': 10px,
+    'padding15': 15px,
+    'padding20': 20px
+);
+
+// Styles
+.main-nav__navicon {
     position: relative;
-    padding-left: 1.25em;
-    margin: 0.75rem 0.75rem 0 0.75rem;
+    padding-left: map-get($main-nav, 'padding20');
+    margin: map-get($main-nav, 'padding10') map-get($main-nav, 'padding10') 0 map-get($main-nav, 'padding10');
     display: inline-block;
-    @media(min-width: $navBreak) {
+    color: $black;
+    @media(min-width: map-get($main-nav, 'break1')) {
         display: none;
     }
-}
-.navicon:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.25em;
-    width: 1em;
-    height: 0.15em;
-    background: black;
-    box-shadow: 0 0.25em 0 0 $black, 0 0.5em 0 0 $black;
+    * {
+        box-sizing: border-box;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 15px;
+        height: 2px;
+        background: $black;
+        box-shadow: 0 0.25em 0 0 $black, 0 0.5em 0 0 $black;
+    }
 }
 
-// Main nav
 .main-nav {
-	background-color: $highlight;
-    max-height: 0;            
+    background-color: $highlight;
+    max-height: 0;
     overflow-y: hidden;
     transition: max-height 0.5s ease-in-out;
-    margin-top: 0.75rem;
-    @media(min-width: $navBreak) {
+    margin-top: map-get($main-nav, 'padding10');
+    @media(min-width: map-get($main-nav, 'break1')) {
+        background-color: transparent;
         max-height: 50px;
         transition: none;
         margin-top: 0;
-        height: 50px;
+        height: 25px;
+        z-index: 1;
+        padding: map-get($main-nav, 'padding10');
     }
 }
-.main-nav--open {           
+
+.main-nav--open {
     overflow-y: hidden;
     transition: max-height 0.5s ease-in-out;
-    max-height: 200px;
-    @media(min-width: $navBreak) {
+    max-height: 350px;
+    @media(min-width: map-get($main-nav, 'break1')) {
         max-height: auto;
         transition: none;
     }
 }
+
+.main-nav--fixed {
+    @media(min-width: map-get($main-nav, 'break1')) {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: rgba(255, 255, 255, 0.95);
+        width: 100%;
+        text-align: right;
+        border-bottom: 1px solid $grey;
+    }
+}
+
 .main-nav__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    height: 100%;
 }
+
 .main-nav__item {
     border-bottom: 1px solid $white;
+    height: 100%;
     &:last-child {
-    	border-bottom: 0;
+        border-bottom: 0;
     }
-    @media(min-width: $navBreak) {
-    	display: inline-block;
-    	border-bottom: 0;
-	    line-height: 2rem;
-	    border-right-width: 1px;
-	    border-right-style: solid;
-	    border-right-color: $white;
-	    &:last-child {
-	    	border-right: 0;
-	    }
+    @media(min-width: map-get($main-nav, 'break1')) {
+        display: inline-block;
+        border-bottom: 0;
+        &:last-child {
+            border-right: 0;
+        }
     }
 }
+
 .main-nav__link {
-    height: 50px;
+    height: 100%;
     color: $black;
-    text-decoration: none;
     display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    line-height: 35px;
+    padding: map-get($main-nav, 'padding15');
     &:hover {
-    	background-color: darken($subtle, 10%);
+        text-decoration: none;
+        background-color: darken($subtle, 10%);
+    }
+    @media(min-width: map-get($main-nav, 'break1')) {
+        font-weight: 900;
+        padding: 5px 0 0 0;
+        margin: 0 map-get($main-nav, 'padding15');
+        &:hover {
+            background-color: transparent;
+            border-bottom: 3px solid $colourOne;
+        }
+        .main-nav--fixed & {
+            color: $black;
+        }
     }
 }
+
 .main-nav__link--selected {
-	background-color: $white;
+    background-color: $white;
     &:hover {
         background-color: $white;
         cursor: default;
+    }
+    @media(min-width: map-get($main-nav, 'break1')) {
+        background-color: transparent;
+        border-bottom: 3px solid $colourOne;
+        &:hover {
+            background-color: transparent;
+        }
     }
 }

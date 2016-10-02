@@ -1,119 +1,158 @@
 body {
-    padding: 1rem;
+    padding: 10px;
     background-color: white;
 }
 
 // Component library specific styles
 .component {
-	margin: 1rem 0;
+	margin: 10px 0;
 }
+
+.component__wrap {
+    padding: 10px;
+}
+
 .component__meta {
-	padding: 1rem;
+	padding: 10px;
     background-color: #000000;
     border-width: 1px;
     border-style: solid;
     border-color: #8a8585;
-    margin-top: 1rem;
+    margin-top: 10px;
     white-space: pre-wrap;
     color: #ffffff
 }
+
 .component__menu-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .component__menu-item {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
-    padding: 1rem;
+    padding: 20px;
 }
+
 .component__menu-link {
-    padding: 1rem 0 0.5rem 0;
+    padding: 10px 0 5px 0;
     display: block;
 }
 
 // Component specific styles for the colours partial
 .colour-one {
-    background-color: $primary; 
-    padding: 1rem;
+    background-color: $colourOne; 
+    padding: 10px;
     color: white; 
 }
+
 .colour-two {
-    background-color: $secondary;
-    padding: 1rem;
+    background-color: $colourTwo;
+    padding: 10px;
     color: white;    
 }
+
 .colour-three {
-    background-color: $strapline;
-    padding: 1rem;
-    color: white;   
+    background-color: $colourThree;
+    padding: 10px;
+    color: black;   
 }
+
 .colour-four {
-    background-color: $highlight;
-    padding: 1rem;
+    background-color: $colourFour;
+    padding: 10px;
     color: white;   
 }
+
 .colour-five {
-    background-color: $subtle;
-    padding: 1rem;
-    color: white;   
+    background-color: $colourFive;
+    padding: 10px;
+    color: black;   
 }
-.black {
-    background-color: $black;
-    padding: 1rem;
+
+.colour-six {
+    background-color: $colourSix;
+    padding: 10px;
     color: white; 
 }
+
+.black {
+    background-color: $black;
+    padding: 10px;
+    color: white; 
+}
+
 .white {
     background-color: $white;
-    padding: 1rem;
+    padding: 10px;
+    color: black;
 }
+
 .grey {
     background-color: $grey;
-    padding: 1rem;
+    padding: 10px;
+    color: black;
 }
+
+.highlight {
+    background-color: $highlight;
+    padding: 1rem;
+    color: black;
+}
+
+.subtle {
+    background-color: $subtle;
+    padding: 10px;
+    color: black;
+}
+
 .warning {
     background-color: $warning;
-    padding: 1rem;
+    padding: 10px;
 }
+
 .success {
     background-color: $success;
-    padding: 1rem;
+    padding: 10px;
 }
+
 .error {
     background-color: $error;
-    padding: 1rem;
+    padding: 10px;
 }
 
 // Component specific styles for the layout partial
 .main__header {
-    background: $primary;
+    background: $colourOne;
 }
+
 .main__content {
-    background: $secondary;
+    background: $colourTwo;
 }
+
 .main__aside {
-    background: $strapline;
+    background: $colourThree;
 }
+
 .main__footer {
     background: $highlight;
 }
 
 // Component specific styles for the font sizes
+.font-xl {
+    font-size: $font-xl;
+}
+
 .font-large {
     font-size: $font-large;
 }
+
 .font-small {
     font-size: $font-small;
 }
+
 .font-smaller {
     font-size: $font-smaller;
 }

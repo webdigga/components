@@ -1,17 +1,34 @@
+/*
+	Form elements component
+
+	- Generic form elements
+	- Found site wide
+*/
+
+// Vars
+$form: (
+	'padding10': 10px,
+	'padding40': 40px
+);
+
+// Styles
 select,
 input[type="text"],
 input[type="number"],
 textarea {
+
+	// This has to be 16 to make sure iOS does not zoom
 	font-size: 16px;
 	font-family: $font-family-secondary;
 	&:focus {
-		outline: 5px auto $secondary;
+		outline: 5px auto $colourTwo;
 	}
+	box-sizing: border-box;
 }
 
 select {
 	-webkit-appearance: none;
-    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    padding: map-get($form, 'padding10') map-get($form, 'padding40') map-get($form, 'padding10') map-get($form, 'padding10');
     height: 40px;
     background-color: transparent;
     background-image: url('/iconography/img/down-arrow.svg');
@@ -21,7 +38,7 @@ select {
 
 input[type="text"],
 input[type="number"] {
-	padding: 0.5rem;
+	padding: map-get($form, 'padding10');
 	height: 40px;
 }
 
@@ -41,7 +58,7 @@ textarea {
 	display: table-cell;
 	vertical-align: middle;
 	-webkit-appearance: none;
-	margin: 10px 0;
+	margin: map-get($form, 'padding10') 0;
 	width: 100%;
 	&:focus {
 		outline: none;
@@ -52,7 +69,7 @@ textarea {
 		cursor: pointer;
 		animate: 0.2s;
 		box-shadow: 1px 1px 1px $black;
-		background: $secondary;
+		background: $colourTwo;
 		border-radius: 5px;
 		border: 1px solid $black;
 	}
@@ -65,10 +82,10 @@ textarea {
 		background: $white;
 		cursor: pointer;
 		-webkit-appearance: none;
-		margin-top: -11px;
+		margin-top: -(map-get($form, 'padding10'));
 	}
 	&:focus::-webkit-slider-runnable-track {
-		background: $secondary;
+		background: $colourTwo;
 	}
 	&::-moz-range-track {
 		width: 100%;
@@ -76,7 +93,7 @@ textarea {
 		cursor: pointer;
 		animate: 0.2s;
 		box-shadow: 1px 1px 1px $black;
-		background: $secondary;
+		background: $colourTwo;
 		border-radius: 5px;
 		border: 1px solid $black;
 	}
@@ -99,13 +116,13 @@ textarea {
 		color: transparent;
 	}
 	&::-ms-fill-lower {
-		background: $secondary;
+		background: $colourTwo;
 		border: 1px solid $black;
 		border-radius: 10px;
 		box-shadow: 1px 1px 1px $black;
 	}
 	&::-ms-fill-upper {
-		background: $secondary;
+		background: $colourTwo;
 		border: 1px solid $black;
 		border-radius: 10px;
 		box-shadow: 1px 1px 1px $black;
@@ -120,10 +137,10 @@ textarea {
 		cursor: pointer;
 	}
 	&:focus::-ms-fill-lower {
-		background: $secondary;
+		background: $colourTwo;
 	}
 	&:focus::-ms-fill-upper {
-		background: $secondary;
+		background: $colourTwo;
 	}
 }
 

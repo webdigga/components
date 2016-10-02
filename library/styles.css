@@ -1,163 +1,202 @@
-* {
-  box-sizing: border-box; }
+/*
+	Font component
 
+	- Used to set both fonts and a collection of font sizes
+	- Found site wide
+*/
+/*
+	Layout component
+
+	- Core layout and container styles
+	- Found site wide
+*/
 body {
   margin: 0;
   padding: 0;
-  background-color: #cccccc;
   font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   color: #555555; }
 
 .container {
+  max-width: 1000px;
   margin: 0 auto; }
 
-.main__header {
-  background-color: #eaeaea; }
+@media (min-width: 48em) {
+  .main__header--home {
+    margin-bottom: 30px; } }
 
 .main__page-content {
   display: table;
   table-layout: fixed;
   width: 100%;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  box-sizing: border-box; }
 
 .main__content {
-  padding: 1rem; }
-  @media (min-width: 48.063em) {
+  margin: 20px 20px 0 20px; }
+  @media (min-width: 48em) {
     .main__content {
-      vertical-align: top;
-      display: table-cell;
-      width: 70%; } }
+      padding: 40px;
+      width: 80%; } }
+
+@media (min-width: 48em) {
+  .main__content--with-aside {
+    vertical-align: top;
+    display: table-cell;
+    width: 70%; } }
 
 .main__aside {
-  padding: 0 1rem 1rem 1rem; }
-  @media (min-width: 48.063em) {
+  margin: 20px; }
+  @media (min-width: 48em) {
     .main__aside {
-      padding: 1rem;
+      padding: 40px 40px 40px 0;
       display: table-cell;
       width: 30%; } }
 
 .main__footer {
-  padding: 1rem;
   background-color: #eaeaea; }
 
 body {
-  padding: 1rem;
+  padding: 10px;
   background-color: white; }
 
 .component {
-  margin: 1rem 0; }
+  margin: 10px 0; }
+
+.component__wrap {
+  padding: 10px; }
 
 .component__meta {
-  padding: 1rem;
+  padding: 10px;
   background-color: #000000;
   border-width: 1px;
   border-style: solid;
   border-color: #8a8585;
-  margin-top: 1rem;
+  margin-top: 10px;
   white-space: pre-wrap;
   color: #ffffff; }
 
 .component__menu-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0; }
 
 .component__menu-item {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  padding: 1rem; }
+  padding: 20px; }
 
 .component__menu-link {
-  padding: 1rem 0 0.5rem 0;
+  padding: 10px 0 5px 0;
   display: block; }
 
 .colour-one {
-  background-color: #ab967d;
-  padding: 1rem;
+  background-color: #F09A31;
+  padding: 10px;
   color: white; }
 
 .colour-two {
-  background-color: #6791ac;
-  padding: 1rem;
+  background-color: #5BC4EC;
+  padding: 10px;
   color: white; }
 
 .colour-three {
-  background-color: #b94a48;
-  padding: 1rem;
-  color: white; }
+  background-color: #dff0d8;
+  padding: 10px;
+  color: black; }
 
 .colour-four {
-  background-color: #eaeaea;
-  padding: 1rem;
+  background-color: #74BA5E;
+  padding: 10px;
   color: white; }
 
 .colour-five {
-  background-color: #f7f7f7;
-  padding: 1rem;
+  background-color: #fcf8e3;
+  padding: 10px;
+  color: black; }
+
+.colour-six {
+  background-color: #4b57a2;
+  padding: 10px;
   color: white; }
 
 .black {
   background-color: #555555;
-  padding: 1rem;
+  padding: 10px;
   color: white; }
 
 .white {
   background-color: #ffffff;
-  padding: 1rem; }
+  padding: 10px;
+  color: black; }
 
 .grey {
   background-color: #cccccc;
-  padding: 1rem; }
+  padding: 10px;
+  color: black; }
+
+.highlight {
+  background-color: #eaeaea;
+  padding: 1rem;
+  color: black; }
+
+.subtle {
+  background-color: #f7f7f7;
+  padding: 10px;
+  color: black; }
 
 .warning {
   background-color: #fcf8e3;
-  padding: 1rem; }
+  padding: 10px; }
 
 .success {
   background-color: #dff0d8;
-  padding: 1rem; }
+  padding: 10px; }
 
 .error {
   background-color: #f2dede;
-  padding: 1rem; }
+  padding: 10px; }
 
 .main__header {
-  background: #ab967d; }
+  background: #F09A31; }
 
 .main__content {
-  background: #6791ac; }
+  background: #5BC4EC; }
 
 .main__aside {
-  background: #b94a48; }
+  background: #dff0d8; }
 
 .main__footer {
   background: #eaeaea; }
 
+.font-xl {
+  font-size: 1.4rem; }
+
 .font-large {
-  font-size: 1.1rem; }
+  font-size: 1.2rem; }
 
 .font-small {
   font-size: 0.9rem; }
 
 .font-smaller {
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
 
+/*
+	Buttons component
+
+	- Used for primary and secondary CTA's
+	- Found site wide
+*/
 .button {
-  position: relative;
-  padding: 0.5rem 0.75rem;
+  text-align: center;
+  padding: 10px 20px;
   color: #ffffff;
   text-decoration: none;
-  font-family: "Arial", "Helvetica", "HelveticaNeue", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   font-size: 0.9rem;
+  min-width: 200px;
+  border-radius: 3px;
+  box-sizing: border-box;
   border-style: none;
   cursor: pointer;
   display: inline-block; }
@@ -169,32 +208,40 @@ body {
     outline: none; }
 
 .button__primary {
-  background-color: #ab967d;
+  background-color: #74BA5E;
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #957d60;
-  text-shadow: 0px -2px #957d60; }
+  border-bottom-color: #5ba045;
+  text-shadow: 0px -2px #5ba045; }
   .button__primary:hover {
-    background-color: #a1896e; }
+    background-color: #65b24c; }
 
 .button__secondary {
-  background-color: #6791ac;
+  background-color: #5BC4EC;
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #4f7791;
-  text-shadow: 0px -2px #4f7791; }
+  border-bottom-color: #2db4e7;
+  text-shadow: 0px -2px #2db4e7; }
   .button__secondary:hover {
-    background-color: #5885a1; }
+    background-color: #44bce9; }
 
+/*
+	Typography component
+
+	- Core font styles / sizes etc
+	- Found site wide
+*/
 h1,
 h2,
 h3,
 h4 {
   margin: 0 0 10px 0;
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 h1 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 10px 20px 10px 0; }
 
 h2 {
   font-size: 1.5rem; }
@@ -207,10 +254,10 @@ h4 {
 
 p {
   line-height: 1.5;
-  margin: 0 0 0.5rem 0; }
+  margin: 0 0 10px 0; }
 
 a {
-  color: #ab967d;
+  color: #F09A31;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -218,34 +265,22 @@ a {
 blockquote {
   border-left-style: solid;
   border-left-width: 1px;
-  border-left-color: #6791ac;
-  margin-left: 1rem;
-  padding-left: 1rem;
-  font-style: italic; }
+  border-left-color: #5BC4EC;
+  font-style: italic;
+  display: inline-block;
+  padding: 5px 20px 5px 10px; }
 
-/* General */
-* {
-  box-sizing: border-box; }
+/*
+	Gallery component
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.clearfix {
-  display: inline-block; }
-
-.clearfix {
-  display: block; }
-
-/* Main slider div */
+	- Showcasing images
+	- Found on article pages
+*/
 .slider {
   overflow: hidden; }
+  .slider * {
+    box-sizing: border-box; }
 
-/* Main image area */
 .slider__main {
   position: relative; }
 
@@ -300,7 +335,6 @@ blockquote {
   right: 17px;
   top: 15px; }
 
-/* Thumbnail navigation area */
 .slider__nav {
   position: relative;
   padding: 5px 0px;
@@ -309,7 +343,15 @@ blockquote {
 .slider__thumbs {
   position: relative;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: block; }
+  .slider__thumbs:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
 
 .thumbs__list-item {
   float: left;
@@ -366,14 +408,13 @@ blockquote {
 .slider__navigation--thumb.left:before {
   background-position: 4px -309px;
   left: 50%;
-  margin-left: -10px; }
+  margin-left: -35.5em; }
 
 .slider__navigation--thumb.right:before {
   background-position: 4px -342px;
   right: 50%;
   margin-right: -4px; }
 
-/* Counter */
 .slider__counter {
   position: absolute;
   right: 0.25em;
@@ -381,13 +422,19 @@ blockquote {
   padding: 0.5em;
   background: rgba(0, 0, 0, 0.7);
   color: #fff; }
-  @media all and (min-width: 35.5em) {
+  @media (min-width: 35.5em) {
     .slider__counter {
       right: 1em;
       bottom: 1em; } }
 
+/*
+	Messaging component
+
+	- Used to alert users to possibke action or assurance
+	- Found site wide
+*/
 .message {
-  padding: 1rem;
+  padding: 10px;
   border-style: solid;
   border-width: 1px; }
 
@@ -406,6 +453,12 @@ blockquote {
   color: #963b3b;
   border-color: #e4b9b9; }
 
+/*
+	Pagination component
+
+	- Used for paging on results
+	- Found on browse/results pages
+*/
 .pagination {
   text-align: center;
   padding: 0; }
@@ -418,14 +471,20 @@ blockquote {
 
 .pagination__link {
   display: block;
-  padding: 0.25rem;
+  padding: 5px;
   text-decoration: none; }
 
 .pagination__link--selected {
-  background-color: #6791ac;
+  background-color: #5BC4EC;
   color: #ffffff;
   cursor: default; }
 
+/*
+	Breadcrumbs component
+
+	- Used so users are always aware of where they are on the site
+	- Found in header on all pages below homepage
+*/
 .breadcrumbs {
   margin: 0;
   padding: 0; }
@@ -435,7 +494,7 @@ blockquote {
   font-size: 0.9rem; }
 
 .breadcrumbs__item--divider {
-  color: #ab967d;
+  color: #F09A31;
   vertical-align: middle; }
 
 .breadcrumbs__link {
@@ -448,21 +507,28 @@ blockquote {
   .breadcrumbs__link--selected:hover {
     text-decoration: none; }
 
+/*
+	Form elements component
+
+	- Generic form elements
+	- Found site wide
+*/
 select,
 input[type="text"],
 input[type="number"],
 textarea {
   font-size: 16px;
-  font-family: "Arial", "Helvetica", "HelveticaNeue", sans-serif; }
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  box-sizing: border-box; }
   select:focus,
   input[type="text"]:focus,
   input[type="number"]:focus,
   textarea:focus {
-    outline: 5px auto #6791ac; }
+    outline: 5px auto #5BC4EC; }
 
 select {
   -webkit-appearance: none;
-  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  padding: 10px 40px 10px 10px;
   height: 40px;
   background-color: transparent;
   background-image: url("/iconography/img/down-arrow.svg");
@@ -471,7 +537,7 @@ select {
 
 input[type="text"],
 input[type="number"] {
-  padding: 0.5rem;
+  padding: 10px;
   height: 40px; }
 
 textarea {
@@ -496,7 +562,7 @@ textarea {
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 1px 1px 1px #555555;
-    background: #6791ac;
+    background: #5BC4EC;
     border-radius: 5px;
     border: 1px solid #555555; }
   .range__input::-webkit-slider-thumb {
@@ -508,16 +574,16 @@ textarea {
     background: #ffffff;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: -11px; }
+    margin-top: -10px; }
   .range__input:focus::-webkit-slider-runnable-track {
-    background: #6791ac; }
+    background: #5BC4EC; }
   .range__input::-moz-range-track {
     width: 100%;
     height: 10px;
     cursor: pointer;
     animate: 0.2s;
     box-shadow: 1px 1px 1px #555555;
-    background: #6791ac;
+    background: #5BC4EC;
     border-radius: 5px;
     border: 1px solid #555555; }
   .range__input::-moz-range-thumb {
@@ -537,12 +603,12 @@ textarea {
     border-color: transparent;
     color: transparent; }
   .range__input::-ms-fill-lower {
-    background: #6791ac;
+    background: #5BC4EC;
     border: 1px solid #555555;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #555555; }
   .range__input::-ms-fill-upper {
-    background: #6791ac;
+    background: #5BC4EC;
     border: 1px solid #555555;
     border-radius: 10px;
     box-shadow: 1px 1px 1px #555555; }
@@ -555,9 +621,9 @@ textarea {
     background: #ffffff;
     cursor: pointer; }
   .range__input:focus::-ms-fill-lower {
-    background: #6791ac; }
+    background: #5BC4EC; }
   .range__input:focus::-ms-fill-upper {
-    background: #6791ac; }
+    background: #5BC4EC; }
 
 .range__value {
   display: table-cell;
@@ -565,6 +631,12 @@ textarea {
   vertical-align: middle;
   text-align: center; }
 
+/*
+	Lists component
+
+	- Differently styled list components
+	- Found site wide
+*/
 .list {
   margin: 0;
   padding: 0;
@@ -572,24 +644,25 @@ textarea {
 
 .list__ordered {
   list-style-type: decimal;
-  margin-left: 1rem; }
+  margin-left: 15px; }
 
 .list__item {
   margin-top: 5px;
   margin-bottom: 5px; }
 
 .list__featured-item {
-  margin-bottom: 1rem; }
+  margin-bottom: 15px; }
 
 .list__featured-link {
   display: block;
   text-decoration: none;
-  display: flex; }
+  display: flex;
+  color: #555555; }
 
 .list__featured-image-container {
   width: 20%;
   max-width: 150px;
-  padding-right: 1rem; }
+  padding-right: 15px; }
 
 .list__featured-image {
   max-width: 100%;
@@ -598,159 +671,272 @@ textarea {
 .list__featured-meta {
   width: 80%; }
 
-.navicon {
-  position: relative;
-  padding-left: 1.25em;
-  margin: 0.75rem 0.75rem 0 0.75rem;
-  display: inline-block; }
-  @media (min-width: 43.75em) {
-    .navicon {
-      display: none; } }
+/*
+    Navigation component
 
-.navicon:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: black;
-  box-shadow: 0 0.25em 0 0 #555555, 0 0.5em 0 0 #555555; }
+    - Used for mobile navigation and when there si room, traditional navigation
+    - Found site wide
+*/
+.main-nav__navicon {
+  position: relative;
+  padding-left: 20px;
+  margin: 10px 10px 0 10px;
+  display: inline-block;
+  color: #555555; }
+  @media (min-width: 36.875em) {
+    .main-nav__navicon {
+      display: none; } }
+  .main-nav__navicon * {
+    box-sizing: border-box; }
+  .main-nav__navicon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 15px;
+    height: 2px;
+    background: #555555;
+    box-shadow: 0 0.25em 0 0 #555555, 0 0.5em 0 0 #555555; }
 
 .main-nav {
   background-color: #eaeaea;
   max-height: 0;
   overflow-y: hidden;
   transition: max-height 0.5s ease-in-out;
-  margin-top: 0.75rem; }
-  @media (min-width: 43.75em) {
+  margin-top: 10px; }
+  @media (min-width: 36.875em) {
     .main-nav {
+      background-color: transparent;
       max-height: 50px;
       transition: none;
       margin-top: 0;
-      height: 50px; } }
+      height: 25px;
+      z-index: 1;
+      padding: 10px; } }
 
 .main-nav--open {
   overflow-y: hidden;
   transition: max-height 0.5s ease-in-out;
-  max-height: 200px; }
-  @media (min-width: 43.75em) {
+  max-height: 350px; }
+  @media (min-width: 36.875em) {
     .main-nav--open {
       max-height: auto;
       transition: none; } }
 
+@media (min-width: 36.875em) {
+  .main-nav--fixed {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px solid #cccccc; } }
+
 .main-nav__list {
   margin: 0;
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  height: 100%; }
 
 .main-nav__item {
-  border-bottom: 1px solid #ffffff; }
+  border-bottom: 1px solid #ffffff;
+  height: 100%; }
   .main-nav__item:last-child {
     border-bottom: 0; }
-  @media (min-width: 43.75em) {
+  @media (min-width: 36.875em) {
     .main-nav__item {
       display: inline-block;
-      border-bottom: 0;
-      line-height: 2rem;
-      border-right-width: 1px;
-      border-right-style: solid;
-      border-right-color: #ffffff; }
+      border-bottom: 0; }
       .main-nav__item:last-child {
         border-right: 0; } }
 
 .main-nav__link {
-  height: 50px;
+  height: 100%;
   color: #555555;
-  text-decoration: none;
   display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  line-height: 35px; }
+  padding: 15px; }
   .main-nav__link:hover {
+    text-decoration: none;
     background-color: #dedede; }
+  @media (min-width: 36.875em) {
+    .main-nav__link {
+      font-weight: 900;
+      padding: 5px 0 0 0;
+      margin: 0 15px; }
+      .main-nav__link:hover {
+        background-color: transparent;
+        border-bottom: 3px solid #F09A31; }
+      .main-nav--fixed .main-nav__link {
+        color: #555555; } }
 
 .main-nav__link--selected {
   background-color: #ffffff; }
   .main-nav__link--selected:hover {
     background-color: #ffffff;
     cursor: default; }
+  @media (min-width: 36.875em) {
+    .main-nav__link--selected {
+      background-color: transparent;
+      border-bottom: 3px solid #F09A31; }
+      .main-nav__link--selected:hover {
+        background-color: transparent; } }
 
+/*
+	Footer component
+
+	- Used to display navigation items to draw users back into the site
+	- Found site wide
+*/
 .footer,
 .footer__list {
-  padding: 0;
   margin: 0;
   list-style-type: none;
   width: 100%; }
 
-.footer__col {
-  display: inline-block;
-  width: 33%;
-  vertical-align: top; }
+.footer__list {
+  padding: 0; }
 
-.footer__col--1 {
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: #ab967d;
-  padding-right: 0.5rem; }
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box; }
   @media (min-width: 31.25em) {
-    .footer__col--1 {
-      padding-right: 1rem; } }
+    .footer {
+      text-align: left;
+      display: flex;
+      justify-content: space-around; } }
+  .footer * {
+    box-sizing: border-box; }
 
 .footer__col--2 {
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: #ab967d;
-  padding-left: 0.5rem; }
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #bbbbbb;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #bbbbbb;
+  padding: 20px 0;
+  margin: 20px 0; }
   @media (min-width: 31.25em) {
     .footer__col--2 {
-      padding-left: 1rem; } }
-
-.footer__col--3 {
-  padding-left: 0.5rem; }
-  @media (min-width: 31.25em) {
-    .footer__col--3 {
-      padding-left: 1rem; } }
+      margin: 0;
+      padding: 0;
+      border-top: 0;
+      border-bottom: 0;
+      padding: 0 15%;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: #bbbbbb;
+      border-left-width: 1px;
+      border-left-style: solid;
+      border-left-color: #bbbbbb; } }
 
 .footer__list-item {
   margin-bottom: 5px; }
 
+.footer__link {
+  color: #555555; }
+
+/*
+	Strapline component
+
+	- Used for company slogan/message
+	- Found on every page in the header
+*/
 .strapline {
-  background-color: #b94a48;
+  background-color: #5BC4EC;
   color: #ffffff;
-  padding: 0.5rem;
+  padding: 10px;
   font-style: italic;
   text-align: center; }
 
+/*
+	Table component
+
+	- Used for generic table styles
+	- Found mostly on article pages
+*/
 table {
   border-spacing: 0;
   width: 100%; }
 
 th,
 td {
-  padding: 0.5rem; }
+  padding: 10px; }
 
 th {
   text-align: left;
-  background-color: #6791ac;
+  background-color: #5BC4EC;
   color: #ffffff;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #555555; }
 
 tr:nth-child(even) {
-  background-color: #ebf0f4; }
+  background-color: white; }
 
 tr:hover {
-  background-color: #dae5eb; }
+  background-color: #fbfeff; }
+
+/*
+	Feature component
+
+	- Used for feature information/testamonials
+	- Mostly found in the aside
+*/
+@media (min-width: 35.5em) {
+  .feature__container {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (min-width: 48em) {
+  .feature__container {
+    display: block; } }
+
+.feature__container * {
+  box-sizing: border-box; }
 
 .feature {
-  background-color: #eaeaea;
-  padding: 1rem;
+  background-color: #dff0d8;
+  padding: 20px;
   color: #555555;
   border-style: solid;
   border-width: 1px;
-  border-color: #d1d1d1; }
+  border-color: #d1d1d1;
+  margin-bottom: 20px;
+  border-radius: 3px; }
+  @media (min-width: 35.5em) {
+    .feature {
+      margin-bottom: 0;
+      width: calc(33% - 12px); } }
+  @media (min-width: 48em) {
+    .feature {
+      margin-bottom: 40px;
+      width: 100%; }
+      .feature:last-child {
+        margin-bottom: 0; } }
 
-.feature__cta {
-  text-align: right; }
+/*
+	Map component
+
+	- Used for highlighting contact location
+	- Found on contact page
+*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#map {
+  height: 300px; }
+
+/*
+	Bullet component
+
+	- Used to highlight points for services / USP etc
+	- Found in the header
+*/

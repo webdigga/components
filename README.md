@@ -22,6 +22,8 @@ Independent components such as Gallery, Colours, Layout, Buttons etc etc
 * <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/strapline/index.html">Strapline</a>
 * <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/table/index.html">Table</a>
 * <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/features/index.html">Features</a>
+* <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/contact-map/index.html">Contact map</a>
+* <a href="https://cdn.rawgit.com/webdigga/diggascookbook-components/master/library/bullets/index.html">Bullets</a>
 
 ## Author
 

@@ -1,7 +1,20 @@
+/*
+	Strapline component
+
+	- Used for company slogan/message
+	- Found on every page in the header
+*/
+
+// Vars
+$strapline: (
+	'padding10': 10px
+);
+
+// Styles
 .strapline {
-	background-color: $strapline;
+	background-color: $colourTwo;
 	color: $white;
-	padding: 0.5rem;
+	padding: map-get($strapline, 'padding10');
 	font-style: italic;
 	text-align: center;
 }

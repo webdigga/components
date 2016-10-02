@@ -1,37 +1,55 @@
+/*
+	Lists component
+
+	- Differently styled list components
+	- Found site wide
+*/
+
+// Vars
+$lists: (
+	'padding5': 5px,
+	'padding15': 15px
+);
+
+// Styles
 .list {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
-// List standard
 .list__ordered {
 	list-style-type: decimal;
-    margin-left: 1rem;
-}
-.list__item {
-	margin-top: 5px;
-	margin-bottom: 5px;
+    margin-left: map-get($lists, 'padding15');
 }
 
-// List featured
-.list__featured-item {
-	margin-bottom: 1rem;
+.list__item {
+	margin-top: map-get($lists, 'padding5');
+	margin-bottom: map-get($lists, 'padding5');
 }
+
+.list__featured-item {
+	margin-bottom: map-get($lists, 'padding15');
+}
+
 .list__featured-link {
 	display: block;
 	text-decoration: none;
 	display: flex;
+	color: $black;
 }
+
 .list__featured-image-container {
 	width: 20%;
 	max-width: 150px;
-	padding-right: 1rem;
+	padding-right: map-get($lists, 'padding15');
 }
+
 .list__featured-image {
 	max-width: 100%;
     height: auto;
 }
+
 .list__featured-meta {
 	width: 80%;
 }
