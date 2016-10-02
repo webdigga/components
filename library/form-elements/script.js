@@ -1,4 +1,4 @@
-dcbObj = {
+Components.form = {
 
 	// Adding event listener for when the ranage is clicked
 	range: function() {
@@ -18,4 +18,4 @@ dcbObj = {
 	}
 };
 
-dcbObj.init();
+Components.form.init();
