@@ -1,1 +1,1 @@
-var dcbObj = dcbObj || {};
+var Components = Components || {};

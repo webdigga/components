@@ -1,4 +1,4 @@
-dcbObj = {
+Components.navigation = {
 
 	// Adding event listener for when the navicon is clicked
 	navicon: function() {
@@ -14,4 +14,4 @@ dcbObj = {
 	}
 };
 
-dcbObj.init();
+Components.navigation.init();
