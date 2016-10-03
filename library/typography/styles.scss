@@ -61,4 +61,5 @@ blockquote {
     font-style: italic;
     display: inline-block;
     padding: map-get($typography, 'padding5') map-get($typography, 'padding20') map-get($typography, 'padding5') map-get($typography, 'padding10');
+    line-height: 1.5;
 }
