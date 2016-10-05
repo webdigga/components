@@ -268,7 +268,8 @@ blockquote {
   border-left-color: #5BC4EC;
   font-style: italic;
   display: inline-block;
-  padding: 5px 20px 5px 10px; }
+  padding: 5px 20px 5px 10px;
+  line-height: 1.5; }
 
 /*
 	Gallery component

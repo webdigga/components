@@ -3,7 +3,7 @@ Components.bullets = {
 	params: {
 		fadeInInterval: "",
 		fadeOutInterval: "",
-		bullet: document.querySelector('.bullets'), // bullet element
+		bullet: document.querySelector( '.bullets' ), // bullet element
 		bulletOpacity: 0, // Opacity value var
 		timeToWait: 5000, // Time to wait before fading back out
 		speed: 100, // Speed of the opacity change
@@ -33,8 +33,8 @@ Components.bullets = {
 	fadeInCallback: function() {
 		this.params.bulletOpacity += 0.1;
 		this.params.bullet.style.opacity = this.params.bulletOpacity;
-		if (this.params.bulletOpacity >= 1) {
-			clearInterval(this.params.fadeInInterval);
+		if ( this.params.bulletOpacity >= 1 ) {
+			clearInterval( this.params.fadeInInterval );
 
 			// Trigger bulletCallback to be called at a timed interval
 			pause = window.setTimeout(function() {
@@ -53,11 +53,11 @@ Components.bullets = {
 	fadeOutCallback: function() {
 		this.params.bulletOpacity -= 0.1;
 		this.params.bullet.style.opacity = this.params.bulletOpacity;
-		if (this.params.bulletOpacity <= 0) {
-			clearInterval(this.params.fadeOutInterval);
+		if ( this.params.bulletOpacity <= 0 ) {
+			clearInterval( this.params.fadeOutInterval );
 
 			// Check here if we have more content to go and increment the index accordingly
-			this.params.contentIndex = (this.params.contentIndex < this.params.contentArrLength) ? this.params.contentIndex + 1 : 0;
+			this.params.contentIndex = ( this.params.contentIndex < this.params.contentArrLength ) ? this.params.contentIndex + 1 : 0;
 
 			// Now we need to initiate the switch again
 			this.init();
