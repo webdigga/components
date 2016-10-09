@@ -9,7 +9,7 @@ define([], function() {
 			bulletOpacity: 0, // Opacity value var
 			timeToWait: 5000, // Time to wait before fading back out
 			speed: 100, // Speed of the opacity change
-			contentArr: ['Campaign Management', '100% ROI Driven', '24/7'], // Content to appear in the bullet
+			contentArr: ['- Campaign Management -', '- 100% ROI Driven -', '- 24/7 -'], // Content to appear in the bullet
 			contentIndex: 0 // Index which we will use to iterate over
 		},
 
